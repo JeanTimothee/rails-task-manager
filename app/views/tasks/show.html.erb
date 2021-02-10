@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+<br>
+<p><%= @task.details %></p>
+<% if @task.completed? %>
+<p><strong>Done!</strong></p>
+<% else %>
+<p><strong>To do!</strong></p>
+<% end %>
+
+<%= link_to "Tasks index", tasks_path %>
